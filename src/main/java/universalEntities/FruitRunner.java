@@ -31,7 +31,9 @@ public class FruitRunner {
         appleBox3.boxPrint();
         appleBox2.replaceFruitsFromTheBox(appleBox3);
         System.out.println("Коробка после пересыпания фруктов");
+        appleBox3.nullBox();
         appleBox2.boxPrint();
+
         //Пересыпать апельсины с фруктами не даст комилятор
         /*Box<Orange> orangeBox1 = new Box<>(new Orange(), new Orange(), new Orange());
         appleBox2.replaceFruitsFromTheBox(orangeBox1);*/
