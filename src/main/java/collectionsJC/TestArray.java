@@ -1,8 +1,36 @@
-package excwptionsForArray;
+package collectionsJC;
+///Класс с тестовыми массивами уже созда, перенес в другой пакет, дополню этот класс новым массивом
+
+import java.sql.Array;
 
 public class TestArray {
 
-    final String[][] stringArray;
+
+
+    public final String[] repeatedStrings;
+
+    {
+        repeatedStrings = new String[15];
+
+        repeatedStrings[0] = "Селиверстов Вячеслав Натанович";
+        repeatedStrings[1] = "Суханов Влас Витальевич";
+        repeatedStrings[2] = "Кошелев Тихон Федотович";
+        repeatedStrings[3] = "Дмитриев Осип Юрьевич";
+        repeatedStrings[4] = "Макаров Давид Вадимович";
+        repeatedStrings[5] = "Исакова Юлиана Феликсовна";
+        repeatedStrings[6] = "Быкова Неолина Иринеевна";
+        repeatedStrings[7] = "Прохорова Инесса Кирилловна";
+        repeatedStrings[8] = "Устинова Марианна Артёмовна";
+        repeatedStrings[9] = "Соболева Элина Эдуардовна";
+        repeatedStrings[10] = "Селиверстов Вячеслав Натанович"; //Дубль 1
+        repeatedStrings[11] = "Селиверстов Вячеслав Натанович"; //Дубль 1
+        repeatedStrings[12] = "Соболева Элина Эдуардовна"; //Дубль 9
+        repeatedStrings[13] = "Соболева Элина Эдуардовна"; //Дубль 9
+        repeatedStrings[14] = "Макаров Давид Вадимович"; //Дубль 4
+    }
+
+
+    public final String[][] stringArray;
 
     {
         stringArray = new String[4][4];
@@ -29,7 +57,7 @@ public class TestArray {
     }
 
     //Массив для теста недостаточной длинны
-    final String[][] stringBadTinyArray;
+    public final String[][] stringBadTinyArray;
 
     {
         stringBadTinyArray = new String[4][3];
@@ -52,7 +80,7 @@ public class TestArray {
     }
 
     //Массив для теста слишком большой длинны
-    final String[][] stringBadBigArray;
+    public final String[][] stringBadBigArray;
 
     {
         stringBadBigArray = new String[5][4];
@@ -82,6 +110,10 @@ public class TestArray {
         stringBadBigArray[4][2] = "AAA";
         stringBadBigArray[4][3] = "AAA";
     }
+
+
+
+
 
 
 }
