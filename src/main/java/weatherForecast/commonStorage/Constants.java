@@ -11,6 +11,8 @@ public class Constants {
     private static final String METRIC_SYSTEM = "metric";
     private static final String ONLY_DAILY = "current,minutely,hourly";
     private static final String API_KEY = "818618af87b0c6bf36c750190bcc45b6";
+    private static final String DB_NAME = "weather.db";
+    private static final String TABLE_NAME = "simpleweather";
 
     public static String getDefaultProtocol() {
         return DEFAULT_PROTOCOL;
@@ -42,5 +44,13 @@ public class Constants {
 
     public static String getApiKey() {
         return API_KEY;
+    }
+
+    public static String getDbName() {
+        return DB_NAME;
+    }
+
+    public static String getTableName() {
+        return TABLE_NAME;
     }
 }
