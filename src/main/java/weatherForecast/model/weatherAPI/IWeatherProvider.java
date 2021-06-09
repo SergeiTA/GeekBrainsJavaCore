@@ -1,4 +1,4 @@
-package weatherForecast.model;
+package weatherForecast.model.weatherAPI;
 
 public interface IWeatherProvider {
 

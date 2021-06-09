@@ -1,4 +1,4 @@
-package weatherForecast.model;
+package weatherForecast.model.weatherAPI;
 
 import com.squareup.okhttp.HttpUrl;
 import com.squareup.okhttp.OkHttpClient;
